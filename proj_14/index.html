@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Developer Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hidden Theme Checkbox for Pure CSS Dark/Light Toggle -->
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="page-wrapper">
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <div class="logo">DevPortfolio<span>.</span></div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!-- Theme Toggle Label Button -->
+            <label for="theme-toggle" class="theme-btn" title="Toggle Dark/Light Mode">
+                <span class="moon">🌙</span>
+                <span class="sun">☀️</span>
+            </label>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <span class="badge">Frontend Engineer & UI Designer</span>
+                <h1>Crafting digital experiences with pure HTML & CSS.</h1>
+                <p>Building high-performance, responsive interfaces utilizing advanced layout engines and custom property states without any JavaScript overhead.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="card-content">
+                    <h3>Live Status</h3>
+                    <p>🚀 Available for freelance opportunities & exciting web builds.</p>
+                    <div class="tech-stack-tags">
+                        <span>HTML5</span>
+                        <span>CSS Grid</span>
+                        <span>Flexbox</span>
+                        <span>Variables</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section with Pure CSS Filtering -->
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Filter through built examples using native CSS state rules.</p>
+            
+            <!-- Hidden Filter Radio Inputs -->
+            <input type="radio" name="filter" id="filter-all" checked>
+            <input type="radio" name="filter" id="filter-frontend">
+            <input type="radio" name="filter" id="filter-ui">
+
+            <!-- Filter Control Labels -->
+            <div class="filter-buttons">
+                <label for="filter-all" class="filter-lbl">All Projects</label>
+                <label for="filter-frontend" class="filter-lbl">Frontend</label>
+                <label for="filter-ui" class="filter-lbl">UI/UX</label>
+            </div>
+
+            <!-- Project Grid Container -->
+            <div class="project-grid">
+                <!-- Project 1 (Frontend) -->
+                <div class="project-card card-frontend">
+                    <div class="project-img bg-1"></div>
+                    <div class="project-info">
+                        <h3>E-Commerce Storefront</h3>
+                        <p>Fully responsive product grid engineered with CSS Grid and smooth hover transitions.</p>
+                        <div class="tags"><span>HTML</span><span>CSS Grid</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (UI/UX) -->
+                <div class="project-card card-ui">
+                    <div class="project-img bg-2"></div>
+                    <div class="project-info">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Administrative panel mockup utilizing CSS Flexbox for complex structural alignment.</p>
+                        <div class="tags"><span>HTML</span><span>Flexbox</span></div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Frontend) -->
+                <div class="project-card card-frontend">
+                    <div class="project-img bg-3"></div>
+                    <div class="project-info">
+                        <h3>SaaS Marketing Page</h3>
+                        <p>High-conversion landing presentation featuring glassmorphism and modern badges.</p>
+                        <div class="tags"><span>HTML</span><span>Variables</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section with Pure CSS Validation -->
+        <section id="contact" class="contact-section">
+            <h2>Let's Work Together</h2>
+            <p class="section-subtitle">Send a message directly using native layout controls.</p>
+            
+            <form class="contact-form" onsubmit="return false;">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Your Message..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 DevPortfolio. Crafted with pure HTML & CSS files.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
